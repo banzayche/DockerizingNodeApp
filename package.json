@@ -1,0 +1,16 @@
+{
+  "name": "DockerizingNodeApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "docker_build": "docker build -t awesome/node-web-app .",
+    "docker_start": "docker run -p 3030:8080 -d awesome/node-web-app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
